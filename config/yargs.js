@@ -1,7 +1,8 @@
 const opts = {
     base: {
         demand: true,
-        alias: 'b'
+        alias: 'b',
+        default: false
     },
     limite: {
         alias: 'l',

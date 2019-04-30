@@ -16,7 +16,7 @@ switch (comando) {
     case 'crear':
         crearArchivo(argv.base, argv.limite)
             .then(archivo => console.log(`Archivo "${archivo}" creado satisfactoriamente`.green))
-            .catch(err => console.log(err));
+            .catch(err => console.log(err.red));
         break;
     default:
         console.log(`No se pudo asociar ninguna tarea al comando: "${comando}"`.red);
